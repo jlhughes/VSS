@@ -34,7 +34,6 @@ foam.CLASS({
         .catch((error) => this.add(value));
       }
     },
-
     {
       name: 'maintenanceItems',
       class: 'Array',

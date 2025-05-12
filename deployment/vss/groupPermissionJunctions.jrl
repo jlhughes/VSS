@@ -17,3 +17,39 @@ p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"passw
 
 // p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"menu.read.vssAdmin"})
 p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"menu.read.vss.crunch.personalsettings"})
+
+// Vehicle
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.vehicleDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"menu.read.vehicle"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"vehicle.create"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"vehicle.read.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"vehicle.update.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"vehicle.delete.*"})
+
+// serviceSchedule
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.serviceScheduleDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"menu.read.serviceSchedule"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"serviceschedule.create"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"serviceschedule.read.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"serviceschedule.update.*"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"serviceschedule.delete.*"})
+
+// maintenanceItem
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.maintenanceItemDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"maintenanceitem.read.*"})
+
+// maintenanceVehicle
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.maintenanceVehicleDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"maintenancevehicle.read.*"})
+
+// maintenanceSchedule
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.maintenanceScheduleDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"maintenanceschedule.read.*"})
+
+// make
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.makeDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"make.read.*"})
+
+// model
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"service.modelDAO"})
+p({class:"foam.core.auth.GroupPermissionJunction",sourceId:"vss",targetId:"model.read.*"})

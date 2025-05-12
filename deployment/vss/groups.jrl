@@ -5,3 +5,4 @@ p({
   "description":"Main user group of vss users",
   "parent":"basicUser"
 })
+

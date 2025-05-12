@@ -98,3 +98,20 @@ p({
     """,
   "client":"{\"of\":\"hughes.vss.MaintenanceSchedule\"}"
 })
+
+p({
+  "class":"foam.core.boot.CSpec",
+  "name":"serviceScheduleDAO",
+  "serve":true,
+  "serviceScript":"""
+    return new foam.dao.EasyDAO.Builder(x)
+      .setOf(hughes.vss.ServiceSchedule.getOwnClassInfo())
+      .setGuid(true)
+      .setJournalType(foam.dao.JournalType.SINGLE_JOURNAL)
+      .setJournalName("serviceschedules")
+      .setRuler(false)
+      .setPm(true)
+      .build();
+    """,
+  "client":"{\"of\":\"hughes.vss.ServiceSchedule\"}"
+})

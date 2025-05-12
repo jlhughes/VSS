@@ -1,0 +1,98 @@
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "vssAdmin",
+  "label": "VSS Admin",
+  "handler": {
+    "class": "foam.core.menu.SubMenu"
+  }
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "maintenanceItem",
+  "label": "Maintenance Item",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "maintenanceItemDAO"
+    }
+  },
+  "parent": "vssAdmin"
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "maintenanceSchedule",
+  "label": "Maintenance Schedule",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "maintenanceScheduleDAO"
+    }
+  },
+  "parent": "vssAdmin"
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "maintenanceVehicle",
+  "label": "Maintenance Vehicle",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "maintenanceVehicleDAO"
+    }
+  },
+  "parent": "vssAdmin"
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "make",
+  "label": "Make",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "makeDAO"
+    }
+  },
+  "parent": "vssAdmin"
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "model",
+  "label": "Model",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "modelDAO"
+    }
+  },
+  "parent": "vssAdmin"
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "serviceSchedule",
+  "label": "Service Schedules",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "serviceScheduleDAO",
+      "createPredicate":{"class":"foam.mlang.predicate.False"}
+    }
+  }
+})
+p({
+  "class": "foam.core.menu.Menu",
+  "id": "vehicle",
+  "label": "Vehicles",
+  "handler": {
+    "class": "foam.core.menu.DAOMenu2",
+    "config": {
+      "class": "foam.comics.v2.DAOControllerConfig",
+      "daoKey": "vehicleDAO"
+    }
+  }
+})
